@@ -16,4 +16,4 @@ delete valores[0]//DELETA UM ELEMENTO DO ARRAY APARTIR DESSA FUNÇÃO DELETE
 console.log(valores)//
 
 
-console.log(typeof valores)//MOSTRA O TIPO. O TIPO DO ARRAY É OJETC 
+console.log(typeof valores)//MOSTRA O TIPO. O TIPO DO ARRAY É OBJETC  
