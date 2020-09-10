@@ -8,7 +8,6 @@
 .menu ul {
     display: flex;
     justify-content: space-around;
-
 }
 ul {
     display: block;
@@ -50,4 +49,7 @@ h1 {
     display: grid;
     gap: 1px;
 
+ }
+ .grid-content{
+     display: grid;
  }
