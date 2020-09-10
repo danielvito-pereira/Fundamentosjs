@@ -8,6 +8,7 @@
 .menu ul {
     display: flex;
     justify-content: space-around;
+
 }
 ul {
     display: block;
@@ -17,5 +18,36 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+    text-decoration:none;
+
 }
 
+li {
+    list-style-type: none;/* tira a olinha do menu  */
+    background-color: bisque;
+    
+    
+  }
+  a { 
+      text-decoration: none;
+     } 
+
+body {
+    text-align: center;
+    
+}
+h1 {
+    font-size:255px;
+}
+ footer {
+     display: block;
+     background-color: black;
+     text-decoration: none;
+     border-end-end-radius: 41;
+ }
+ .grid-rodape{
+    display: grid;
+    display: grid;
+    gap: 1px;
+
+ }
