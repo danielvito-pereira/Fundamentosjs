@@ -1,0 +1,49 @@
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    color: #a6c9ea;
+    font-size: 90px;
+
+    font-family: 'UnifrakturCook', cursive;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+ul li {
+    color:#495a68;
+    font-size: 60px;
+    list-style: none;
+    position: relative;
+    cursor:default;
+    font-family: 'Teko', sans-serif;
+}
+
+ul li :hover {
+    color :#a6c9ea;
+}
+
+ul li:hover ::before {
+    position: absolute;
+    left: -90px;
+    content: '';
+    display: inline-block;
+    background-size: 90px;
+    height: 90px;
+    width: 90px;
+}
