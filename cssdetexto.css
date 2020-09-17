@@ -2,3 +2,13 @@ p {
     text-align: justify;
     text-indent: 50px;
 }
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+li a {
+    text-decoration: none;
+    color:black;
+}
+
