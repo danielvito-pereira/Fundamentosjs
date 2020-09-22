@@ -2,15 +2,8 @@ p {
     text-align: justify;
     text-indent: 50px;
 }
-.menu ul {
-    display: flex;
-    justify-content: space-around;
-    
-}
-li a {
-    text-decoration: none;
-    color:black;
-}
+
+
 /*menu*/
 nav#menu  {
     display: block;
@@ -22,18 +15,49 @@ nav#menu ul {
     list-style: none;
     text-decoration: uppercase;
     position: absolute;
-    top: -20;
+    top: -20px;
     left: 100px;
+    
 }
 
 nav#menu li {
     display: inline-block;
-    text-decoration: whitesmoke;
-    background-color: black;
+    background-color: rgb(75, 70, 70);
     padding: 10px;
     margin: 2px;
+    
 }
-
+nav#menu li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
 nav#menu h1 {
     display: none;
 }
+body {
+    text-align: center;
+    
+}
+h1 {
+    font-size:25px;
+}
+ footer {
+     display: block;
+     background-color: black;
+     text-decoration: none;
+     border-end-end-radius: 41;
+     
+ }
+ .grid-rodape {
+    display: grid;
+    display: grid;
+    gap: 1px;
+
+ }
+ .grid-rodape h1 {
+     
+     color: whitesmoke;
+ }
+ .grid-content {
+     display: grid;
+ }
