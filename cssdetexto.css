@@ -11,4 +11,29 @@ li a {
     text-decoration: none;
     color:black;
 }
+/*menu*/
+nav#menu  {
+    display: block;
+    
+}
 
+
+nav#menu ul {
+    list-style: none;
+    text-decoration: uppercase;
+    position: absolute;
+    top: -20;
+    left: 100px;
+}
+
+nav#menu li {
+    display: inline-block;
+    text-decoration: whitesmoke;
+    background-color: black;
+    padding: 10px;
+    margin: 2px;
+}
+
+nav#menu h1 {
+    display: none;
+}
