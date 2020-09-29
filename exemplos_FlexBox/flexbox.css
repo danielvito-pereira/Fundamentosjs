@@ -9,21 +9,37 @@ body {
     justify-content: space-between;/*dá espasso entre todos os itens */
 }
 .menu-topo {
-    background:#ffc7c7;
+    background:#ffffff;
 }
 .menu-topo ul {
     display: flex;
     justify-content: space-evenly;/*faz com que eles ocupem o mesmo espaço entre eles */
 }
 .menu-topo ul li {
+
     list-style: none;
+    background: whitesmoke;
+    align-items: center;
+    padding: 10px 5px 15px;
+    
 }
+.li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    border: 1px solid black;
+}
+.menu-topo ul li:hover {
+    background: black;
+    transition: 2s;
+    
+}
+
 .conteudo {
     background: #e2e2;
     flex: 1;/*define o tamanho que o conteudo vai ocupar dentro da destribuição *//*o número diz respeito a ierarquia de porsemtagem que ele vai ocupar */
     display: flex;
    /* flex-direction: column;*/
-   flex-direction: column-reverse;/*reverte os elementos no caso as colunas mas também pode ser aplicado em colunas */
+   flex-direction: column;/*reverte os elementos no caso as colunas mas também pode ser aplicado em colunas */
    /*------quebrando a linha---------*/
   /* align-items: center;
    
@@ -41,5 +57,16 @@ body {
  /*---------------*/
 }
 .footer {
+
     background: #ffc7c7;
+
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul li {
+    list-style: none;
 }
