@@ -1,32 +1,81 @@
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
-
-.menu ul {
+.navbar {
+    background: #0e0d0d;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;/*coloca os itens um do lado do outro*/
+    align-items: center;
+    padding: 20px;
+}
+.check {
+    display: none;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;/*faz com que ele suma*/
+    outline: none;/*retira a linha fracionada */
+}
+.check::before { /*um filho*/
+    content: url(../img/hamburger-menu.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+}
+.check:checked::before {/*faz a mudança de icone ao clicar */
+    content: url(../img/hamburger.svg);
 }
 ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    text-decoration:none;
-
+    --display: flex;
+   display: var(--display);
+   flex: 1;
+   justify-content: space-evenly; 
 }
 
-li {
-    list-style-type: none;/* tira a olinha do menu  */
-    
-    
-  }
-  a { 
-      text-decoration: none;
-     } 
+ul li {
+    list-style: none; /*retira a bolinha dele*/
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;/*quebra linha*/
+    }
+    .check {
+        display: block;
+    }
+    ul {
+        flex-direction: column;
+        padding-left: 0;
+        flex-basis: 100%;/*diz qual o tamanho que o item vai ter na linha*/
+        --display:none;/*faz o menu sumir*/
+    }
+    ul li {
+        padding: 5px 0;
+    }
 
+}
+.check:checked + ul {
+    --display:flex;
+}
+div#menu {
+    text-decoration: none;
+    
+}
+a {
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.conteudo {
+    display: inline-grid;
+   
+}
+.rodape {
+    display: inline-grid;
+    
+}
