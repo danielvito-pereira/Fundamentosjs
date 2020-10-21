@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function imparPar() {
+            let num = parseInt(document.getElementById("txtNum").value)
+                if (num%2 === 0) {
+                    r=num/2
+                    return document.write("O número é par e o resultado é "+ r)
+                } else {
+                    r = (num*3)+1
+                    return document.write("O número é impar e o resultado é : "+r)
+                }
+                
+        }
+    </script>
+    Entrar com um número inteiro positivo superior a 1 <input type="number" id="txtNum">
+    Calcular <input type="button" value="Calcular" onclick="imparPar()">
+
+</body>
+</html>
