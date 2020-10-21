@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function areaDoCirculo() {
+            
+            let r =document.getElementById("txtR").value
+            a = Math.PI * (r*r)
+            return document.write("A área do círculo é : "+a);
+        }
+    </script>
+
+        Raio <input type="text"  id="txtR">
+        Resultado <input type="button" value="Area" onclick="areaDoCirculo()">
+</body>
+</html>
