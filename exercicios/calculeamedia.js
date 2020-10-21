@@ -1,13 +1,11 @@
 
 
-let n1, n2, n3, n4
-
-
-
-n1 = prompt("Digite a primeira nota : ")
-n2 = prompt("Digite a primeira nota : ")
-n3 = prompt("Digite a primeira nota : ")
-n4 = prompt("Digite a primeira nota : ")
-
-media = n1 + n2 + n3 + n4 / 4
-alert("O resultado é :" + media())
+function CalculeMedia() {
+    let n1= document.getElementById("txtN1").value
+    let n2= document.getElementById("txtN2").value
+    let n3= document.getElementById("txtN3").value
+    let n4= document.getElementById("txtN4").value
+    media = (n1 + n2 + n3+ n4) / 4;
+    return document.write("A sua media final é : " + media);
+   
+}
