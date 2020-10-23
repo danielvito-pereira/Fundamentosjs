@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+</head>
+<body>
+    <script>
+function doisvalores(a ,b) {
+    
+    a = document.getElementById("txtA").value
+    b = document.getElementById("txtB").value
+     soma= a+b
+     div=a/b
+     mult = a*b
+     sub=a-b
+     
+     return document.write(`OS resultados : <br>  soma ${soma} <br>subtração ${div}
+     <br>multiplicação ${mult}<br> e divisão  ${sub}`)
+     }
+
+    </script>
+    Número 1: <input type="number" id="txtA">
+    Número 2: <input type="number" name="" id="txtB">
+    <input type="button" value="Calcular" onclick="doisvalores()">
+</body>
+</html>
